@@ -20,7 +20,7 @@ public class Client {
     }
 
     private void loadSettings() throws IOException {
-        List<String> lines = Files.readAllLines(Paths.get("src/settings.txt"));
+        List<String> lines = Files.readAllLines(Paths.get("settings.txt"));
         for (String line : lines) {
             if (line.startsWith("host=")) {
                 host = line.substring(5);

@@ -1,0 +1,24 @@
+нояб. 03, 2025 10:31:40 AM org.example.Server loadSettings
+WARNING: Не удалось прочитать настройки, используется порт по умолчанию 12345
+java.nio.file.NoSuchFileException: settings.txt
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:231)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:357)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:399)
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:371)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:154)
+	at java.base/java.nio.file.Files.newBufferedReader(Files.java:2645)
+	at java.base/java.nio.file.Files.readAllLines(Files.java:3085)
+	at java.base/java.nio.file.Files.readAllLines(Files.java:3122)
+	at org.example.Server.loadSettings(Server.java:49)
+	at org.example.Server.<init>(Server.java:22)
+	at org.example.Server.main(Server.java:194)
+	at ChatServerTest.lambda$startServer$0(ChatServerTest.java:18)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+
+нояб. 03, 2025 10:31:40 AM org.example.Server <init>
+INFO: Server started on port 12345
+нояб. 03, 2025 10:31:40 AM org.example.Server start
+INFO: Ожидание подключений...
